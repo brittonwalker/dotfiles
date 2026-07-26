@@ -1,0 +1,27 @@
+[user]
+    name = Britton Walker
+    email = bwalker1801@gmail.com
+
+[init]
+    defaultBranch = main
+
+[pull]
+    ff = only
+
+[push]
+    default = current
+
+[fetch]
+    prune = true
+
+[color]
+    ui = auto
+
+[rerere]
+    enabled = true
+
+[filter "lfs"]
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
