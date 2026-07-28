@@ -1,0 +1,120 @@
+# ~/.config/starship.toml
+
+add_newline = true
+
+format = """
+$directory $git_branch$git_status
+$nodejs$php$python$cmd_duration
+$character
+"""
+
+#
+# Directory
+#
+
+[directory]
+style = "bold white"
+format = "[$path]($style) "
+truncation_length = 3
+truncate_to_repo = true
+
+#
+# Git
+#
+
+[git_branch]
+style = "blue"
+format = "[$symbol$branch]($style) "
+truncation_length = 24
+truncation_symbol = "…"
+
+[git_status]
+style = "bold red"
+format = "[$all_status$ahead_behind]($style) "
+stashed = ""
+
+#
+# Languages
+#
+
+[nodejs]
+symbol = ""
+format = "[node $version]($style) "
+style = "green"
+
+[php]
+symbol = "php "
+format = " [$symbol$version]($style)"
+style = "147"
+
+[python]
+symbol = "py "
+format = " [$symbol$version]($style)"
+style = "yellow"
+
+[golang]
+symbol = "go "
+format = " [$symbol$version]($style)"
+style = "cyan"
+
+[rust]
+symbol = "rust "
+format = " [$symbol$version]($style)"
+style = "red"
+
+#
+# Command Duration
+#
+
+[cmd_duration]
+min_time = 2000
+format = " [took $duration](dimmed white)"
+
+#
+# Prompt
+#
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold blue)"
+
+#
+# Disable modules we don't want
+#
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[time]
+disabled = true
+
+[battery]
+disabled = true
+
+[memory_usage]
+disabled = true
+
+[package]
+disabled = true
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[azure]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[container]
+disabled = true
