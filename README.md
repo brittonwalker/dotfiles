@@ -1,15 +1,30 @@
-# Dotfiles
+# Britton's Development Environment
 
-My personal shell and Git configuration.
+## Philosophy
+
+- Keep the shell minimal.
+- One responsibility per file.
+- Prefer native tooling over frameworks.
+- Symlink configs rather than copy them.
+- Every installed tool should have a purpose.
+
+## Bootstrap
+
+brew bundle
+./install.sh
 
 ## Structure
 
-- bash/ – Bash configuration
-- git/ – Git configuration
+shell/
+git/
+config/
+bin/
 
-## Install
+## Common tools
 
-Copy the files into the home directory:
-
-cp bash/bash_profile ~/.bash_profile
-cp git/gitconfig ~/.gitconfig
+- Homebrew
+- Valet
+- Docker
+- Node (mise planned)
+- Mailpit
+- Starship
