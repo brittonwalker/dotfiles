@@ -12,8 +12,5 @@ source "$DOTFILES/shell/aliases.zsh"
 source "$DOTFILES/shell/functions.zsh"
 source "$DOTFILES/shell/init.zsh"
 
-# Starship
-eval "$(starship init zsh)"
-
 # Local overrides
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
