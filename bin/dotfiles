@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DOTFILES="$(dirname "$SCRIPT_DIR")"
+
+case "${1:-}" in
+    install)
+        "$DOTFILES/scripts/install.sh"
+        ;;
+    doctor)
+        "$DOTFILES/scripts/doctor.sh"
+        ;;
+    *)
+        echo "Usage: dotfiles <command>"
+        echo
+        echo "Commands:"
+        echo "  install   Install dotfiles"
+        echo "  doctor    Check workstation health"
+        exit 1
+        ;;
+esac
