@@ -2,10 +2,6 @@
 brew "libssh2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# C++ library for translating between absolute and civil times
-brew "cctz"
-# Enables you to reproduce the CircleCI environment locally
-brew "circleci"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
 brew "freetds"
 # Dependency Manager for PHP
@@ -22,10 +18,6 @@ brew "ffmpeg"
 brew "fzf"
 # Distributed revision control system
 brew "git"
-# Core application library for C
-brew "glib"
-# Apache HTTP server
-brew "httpd"
 # Asynchronous event library
 brew "libevent"
 # Web and API based SMTP testing
@@ -36,12 +28,8 @@ brew "mkcert"
 brew "mole"
 # Open source relational database management system
 brew "mysql@5.7", restart_service: :changed
-# HTTP/2 C Library
-brew "nghttp2"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx", restart_service: :changed
-# Open-source, cross-platform JavaScript runtime environment
-brew "node"
 # General-purpose scripting language
 brew "php@8.2"
 # Fast, disk space efficient package manager
@@ -50,19 +38,17 @@ brew "pnpm"
 brew "python@3.13"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Cross-shell prompt for astronauts
+brew "starship"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-cask "adoptopenjdk"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
+cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Clipboard manager
-cask "jumpcut"
-# Interactive JavaScript, Python or SQL interface
-cask "mysql-shell"
 vscode "anthropic.claude-code"
 vscode "astro-build.astro-vscode"
 vscode "bierner.markdown-preview-github-styles"
