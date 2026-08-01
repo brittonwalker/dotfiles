@@ -3,7 +3,7 @@
 add_newline = true
 
 format = """
-$directory $git_branch$git_status
+$username$directory$git_branch$git_status
 $nodejs$php$python$cmd_duration
 $character
 """
@@ -13,7 +13,7 @@ $character
 #
 
 [directory]
-style = "bold white"
+style = "bold yellow"
 format = "[$path]($style) "
 truncation_length = 3
 truncate_to_repo = true
@@ -29,7 +29,7 @@ truncation_length = 24
 truncation_symbol = "…"
 
 [git_status]
-style = "bold red"
+style = "red"
 format = "[$all_status$ahead_behind]($style) "
 stashed = ""
 
@@ -84,7 +84,9 @@ vimcmd_symbol = "[❮](bold blue)"
 #
 
 [username]
-disabled = true
+show_always = true
+style_user = "dimmed white"
+format = "[$user]($style) in "
 
 [hostname]
 disabled = true
