@@ -31,3 +31,12 @@ link "$DOTFILES/.config/starship.toml" \
 
 link "$DOTFILES/.config/mise.toml" \
      "$HOME/.config/mise.toml"
+
+link "$DOTFILES/vscode/settings.json" \
+     "$HOME/Library/Application Support/Code/User/settings.json"
+
+link "$DOTFILES/vscode/keybindings.json" \
+     "$HOME/Library/Application Support/Code/User/keybindings.json"
+
+link "$DOTFILES/vscode/snippets" \
+     "$HOME/Library/Application Support/Code/User/snippets"

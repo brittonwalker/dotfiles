@@ -1,0 +1,171 @@
+// --------------------------------------------------
+// VS Code
+// Synced via dotfiles
+// --------------------------------------------------
+
+{
+  // --------------------------------------------------
+  // Editor
+  // --------------------------------------------------
+
+  "editor.accessibilitySupport": "off",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.scrollBeyondLastLine": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.wordWrap": "off",
+  "editor.renderWhitespace": "selection",
+
+  // --------------------------------------------------
+  // Files
+  // --------------------------------------------------
+
+  "files.autoSave": "off",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.astro": true,
+    "**/.turbo": true,
+    "**/.vercel": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/.cache": true
+  },
+  "files.readonlyInclude": {
+    "**/pnpm-lock.yaml": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/payload-types.ts": true
+  },
+
+  // --------------------------------------------------
+  // Workbench & Explorer
+  // --------------------------------------------------
+
+  "workbench.colorTheme": "Dark+",
+  "workbench.editor.empty.hint": "hidden",
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.sortOrder": "type",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock, bun.lockb",
+    "tsconfig.json": "tsconfig.*.json",
+    ".env": ".env.*"
+  },
+
+  // --------------------------------------------------
+  // Search
+  // --------------------------------------------------
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/coverage": true,
+    "**/.astro": true
+  },
+
+  // --------------------------------------------------
+  // Git
+  // --------------------------------------------------
+
+  "git.openRepositoryInParentFolders": "never",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+
+  // --------------------------------------------------
+  // Formatting
+  // --------------------------------------------------
+
+  "prettier.singleQuote": true,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+
+  // --------------------------------------------------
+  // Terminal
+  // --------------------------------------------------
+
+  "terminal.integrated.defaultProfile.osx": "zsh",
+
+  // --------------------------------------------------
+  // Language Support
+  // --------------------------------------------------
+
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.includeLanguages": {
+    "astro": "html"
+  },
+
+  "tailwindCSS.emmetCompletions": true,
+
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "intelephense.stubs": ["wordpress"],
+
+  "phpcs.executablePath": "phpcs",
+  "phpcs.showSources": true,
+
+  // --------------------------------------------------
+  // Extensions
+  // --------------------------------------------------
+
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "claudeCode.preferredLocation": "sidebar",
+
+  "extensions.autoCheckUpdates": true,
+  "extensions.autoUpdate": "off"
+}
